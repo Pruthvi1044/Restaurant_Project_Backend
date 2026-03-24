@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0F0F0F;
+            color: #E0E0E0;
+        }
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #0F0F0F;
+            padding-bottom: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1A1A1A;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #333;
+            margin-top: 40px;
+        }
+        .header {
+            background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #000;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+        .content {
+            padding: 50px 40px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #AAAAAA;
+        }
+        .rating-box {
+            display: inline-block;
+            background-color: #2A2A2A;
+            padding: 15px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #444;
+        }
+        .rating-text {
+            font-size: 20px;
+            color: #F9CB28;
+            font-weight: 700;
+        }
+        .footer {
+            padding: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="logo">Swaad Indian Bistro</div>
+            </div>
+            <div class="content">
+                <h2>Thank You for Your Feedback!</h2>
+                <p>Hello {{ feedback.name }},</p>
+                <p>We truly appreciate you taking the time to share your experience with us. Your feedback helps us grow and serve you better.</p>
+                
+                <div class="rating-box">
+                    <span class="rating-text">Your Rating: {{ feedback.rating }} / 5 ⭐</span>
+                </div>
+                
+                <p>We hope to see you again soon for another exquisite meal!</p>
+            </div>
+            <div class="footer">
+                <p>&copy; 2026 Swaad Indian Bistro. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
