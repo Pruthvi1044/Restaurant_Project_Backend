@@ -18,10 +18,10 @@ Key Features:
 
 Tech Stack:
 
-Backend: Django, Django REST Framework
-Database: MySQL (Hosted on PythonAnywhere)
-Authentication: Token-based authentication
-Deployment: PythonAnywhere
+* Backend: Django, Django REST Framework
+* Database: MySQL (Hosted on PythonAnywhere)
+* Authentication: Token-based authentication
+* Deployment: PythonAnywhere
 
 
 The backend is designed to communicate with a React-based frontend and follows a modular and scalable architecture for efficient restaurant service management.
